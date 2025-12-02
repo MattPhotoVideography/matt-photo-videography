@@ -1,0 +1,54 @@
+{
+  "categories": [
+    "Newborn",
+    "Family",
+    "Baby"
+  ],
+  "images": [
+    {
+      "src": "/images/portfolio/baby_crown.webp",
+      "alt": "Baby in floral outfit with gold crown headband beside purple unicorn — Edmonton baby milestone session",
+      "categories": ["Baby"]
+    },
+    {
+      "src": "/images/portfolio/Baby_moon.webp",
+      "alt": "Baby in basket under crescent moon and stars backdrop — whimsical Edmonton milestone studio photo",
+      "categories": ["Baby"]
+    },
+    {
+      "src": "/images/portfolio/Baby_dog.webp",
+      "alt": "Smiling baby sitting beside black and white dog on soft blanket — cozy studio portrait in Edmonton",
+      "categories": ["Baby"]
+    },
+    {
+      "src": "/images/portfolio/Family.jpg",
+      "alt": "Backlit family portrait at sunset in Edmonton river valley",
+      "categories": ["Family"]
+    },
+    {
+      "src": "/images/portfolio/Baby_Oiler.webp",
+      "alt": "Smiling baby in denim cap with Edmonton Oilers puck on light blue studio backdrop — Edmonton baby milestone photo",
+      "categories": ["Baby"]
+    },
+    {
+      "src": "/images/portfolio/Baby_toy.webp",
+      "alt": "100-day milestone baby in sunhat leaning on soft fur with chipmunk plush — peach backdrop — Edmonton baby photography",
+      "categories": ["Baby"]
+    },
+    {
+      "src": "/images/portfolio/Baby_jungle.webp",
+      "alt": "Newborn wrapped in neutral blanket during cozy Edmonton studio session",
+      "categories": ["Newborn"]
+    },
+    {
+      "src": "/images/portfolio/Baby_Boxing.webp",
+      "alt": "Baby dressed as a little boxer with gold gloves on cream blanket — Edmonton milestone studio portrait",
+      "categories": ["Baby"]
+    },
+    {
+      "src": "/images/portfolio/Baby_chef.webp",
+      "alt": "Baby dressed as a chef — Edmonton milestone studio portrait",
+      "categories": ["Baby"]
+    }
+  ]
+}

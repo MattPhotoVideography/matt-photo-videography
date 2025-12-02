@@ -1,0 +1,18 @@
+{
+  "businessName": "Matt Photo Videography",
+  "owner": "Matt Honardar",
+  "tagline": "Edmonton \u2014 Professional Photography & Videography",
+  "phone": "+1-587-983-2050",
+  "email": "office@mattphotovideography.ca",
+  "url": "https://mattphotovideography.ca",
+  "logoUrl": "/images/logo.png",
+  "facebook": "https://www.facebook.com/mattphotovideography",
+  "instagram": "https://www.instagram.com/matt_photo_videography",
+  "serviceAreas": [
+    "Edmonton and Surrounding Areas"
+  ],
+  "socials": [
+    "https://www.facebook.com/mattphotovideography",
+    "https://www.instagram.com/matt_photo_videography"
+  ]
+}

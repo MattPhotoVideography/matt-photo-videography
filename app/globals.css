@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: theme('colors.paper');
+  --text: theme('colors.ink');
+  --accent: theme('colors.brand.DEFAULT');
+}
+
+/* ✅ Put the texture on <html> */
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+
+  color: var(--text);
+
+  /* Start with NO white wash so we can see it working */
+  background-image: url('/images/bg/paper.webp') !important;
+  background-repeat: repeat;
+  background-size: 700px auto;   /* adjust 600–1000 to taste */
+  background-attachment: fixed;
+  background-color: #ffffff;      /* fallback */
+}
+
+/* ✅ Body inherits the texture from <html> */
+body {
+  height: 100%;
+  background: transparent !important;
+}
+
+.container { @apply mx-auto max-w-7xl px-4; }
+
+.prose-custom h1 { @apply text-4xl md:text-5xl font-semibold tracking-tight; }
+.prose-custom h2 { @apply text-2xl md:text-3xl font-semibold mt-8; }
+.prose-custom p  { @apply leading-relaxed my-4; }
+.prose-custom a  { @apply text-brand underline; }
+.prose-custom ul { @apply list-disc pl-5 my-4; }
