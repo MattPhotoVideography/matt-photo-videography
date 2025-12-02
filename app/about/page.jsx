@@ -9,7 +9,7 @@ export default function About() {
         <p>
           Hi! Welcome to our website. My name is Matt and I’m a passionate photographer and
           videographer serving Edmonton and the surrounding communities. I began my career in the arts
-          through both photography and professional videography—capturing documentaries and creating
+          through both photography and professional videography, capturing documentaries and creating
           live-action animations that became multi-episode series.Photography has always had a special place in my heart. Over the past 20 years, I’ve
           dedicated myself to creating images that families treasure for a lifetime—one frame at a time.
         </p>

@@ -35,6 +35,19 @@ export default function Home() {
       <Schema json={localBusinessJsonLd(site)} />
       <Schema json={faqJsonLd(faqs)} />
       <Schema json={breadcrumbsJsonLd([{ name: "Home", url: `${site.url}/` }])} />
+      <Schema
+        json={{
+          "@context": "https://schema.org",
+          "@type": "VideoObject",
+          "name": "Behind the Lens: Our Photography Process",
+          "description": "A quick look at how Matt Photo Videography plans, lights, and directs relaxed sessions in Edmonton.",
+          "thumbnailUrl": [`${site.url}/images/posters/process.jpg`],
+          "uploadDate": "2025-12-01",   // update to actual date
+          "duration": "PT1M30S",        // update to actual duration
+          "contentUrl": `${site.url}/videos/process.mp4`,
+          "embedUrl": `${site.url}/#process-video`
+        }}
+      />
 
       {/* HERO */}
       <section className="relative isolate overflow-hidden">
@@ -54,9 +67,18 @@ export default function Home() {
               <p className="uppercase tracking-widest text-white/80 text-sm md:text-base">
                 {site.businessName}
               </p>
-              <h1 className="mt-3 text-4xl md:text-6xl font-semibold leading-tight">
-                Edmonton Photography by Matt Photo Videography
+              <h1
+                className="
+                  mt-3
+                  font-normal tracking-tight
+                  text-white leading-tight
+                  text-[clamp(2rem,5vw,4.25rem)]
+                "
+              >
+                Edmonton Photography by
+                <span className="block">Matt Photo Videography</span>
               </h1>
+
 
               <div className="mt-8 flex flex-wrap gap-3 justify-center">
                 <Link
@@ -146,13 +168,7 @@ export default function Home() {
           <div className="md:col-span-2">
             <div className="prose-custom">
               <p>
-                Hi, I’m Matt—based in Alberta and serving Edmonton. A birthday camera at 12
-                sparked a lifelong fascination with light, expression, and story. My sessions are
-                calm, warm, and genuine.
-              </p>
-              <p>
-                I create images families treasure—newborn, baby, maternity, and family sessions—
-                plus clean, professional brand imagery for local businesses (headshots, products, events).
+                Hi! Welcome to our website. My name is Matt and I’m a passionate photographer and videographer serving Edmonton and the surrounding communities. I began my career in the arts through both photography and professional videography, capturing documentaries and creating live-action animations that became multi-episode series.Photography has always had a special place in my heart. Over the past 20 years, I’ve dedicated myself to creating images that families treasure for a lifetime—one frame at a time.
               </p>
               <a href="/about" className="inline-block mt-3 underline">Read the full story</a>
             </div>
@@ -216,11 +232,44 @@ export default function Home() {
       {/* 7) BEHIND THE LENS */}
       <Section title="Behind the Lens" subtitle="Stories, sessions, and simple tips.">
         <div className="grid md:grid-cols-3 gap-6">
+          {/* Left: intro + video */}
           <div className="md:col-span-2 text-gray-700">
-            From prepping for newborn sessions to creating relaxed family portraits, the blog shares practical ideas and a peek at the process.
+            <p>
+              From prepping for newborn sessions to creating relaxed family portraits, the blog shares
+              practical ideas and a peek at the process.
+            </p>
+
+            {/* Process video */}
+            <div id="process-video" className="mt-6">
+              <div className="relative w-full max-w-3xl">
+                <div className="aspect-video overflow-hidden rounded-2xl shadow-lg ring-1 ring-black/10 bg-black">
+                  <video
+                    className="h-full w-full"
+                    controls
+                    playsInline
+                    preload="metadata"
+                    poster="/images/posters/process.jpg"   // add this file
+                  >
+                    <source src="/videos/process.mp4" type="video/mp4" />  {/* add this file */}
+                    {/* Optional captions for accessibility/SEO */}
+                    <track
+                      kind="captions"
+                      srcLang="en"
+                      label="English"
+                      src="/captions/process.en.vtt"      // add this file if you have captions
+                      default
+                    />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <p className="mt-3 text-sm text-gray-600">
+                  A quick look at how we plan, light, and direct so sessions feel calm and natural.
+                </p>
+              </div>
+            </div>
           </div>
 
-          {/* Static latest posts */}
+          {/* Right: static latest posts */}
           <div className="rounded-2xl border border-gray-200 p-6 bg-white">
             <div className="font-semibold">Latest posts</div>
             <ul className="mt-3 space-y-1 text-sm list-disc pl-4">
