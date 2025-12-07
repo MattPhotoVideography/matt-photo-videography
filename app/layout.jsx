@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import site from "@/content/site.json";
+import ScrollManager from "@/components/ScrollManager";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" });
@@ -27,9 +28,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
-      <body className="min-h-screen flex flex-col">
+      {/* DO NOT set any background color here */}
+      <body className="min-h-screen flex flex-col bg-transparent">
+        <ScrollManager />
         <Header />
-        <main className="flex-1">{children}</main>
+        {/* Keep main transparent so the paper shows through */}
+        <main className="flex-1 bg-transparent">{children}</main>
         <Footer />
       </body>
     </html>
